@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: recalled-mitverkaufen
+    runtime: static
+    staticPublishPath: .
