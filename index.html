@@ -22,7 +22,7 @@
       <header class="landing-header">
         <div class="landing-logo">RECALLED</div>
         <div class="landing-hero">
-          <h1>Reseller? Zeit, <span>endlich zu skalieren.</span></h1>
+          <h1>Reseller?<br />Zeit, <span>endlich zu skalieren.</span></h1>
           <p>
             Verkaufe deine Pieces mit auf <strong>Recalled</strong> — unsere App ist
             im App Store und wächst jeden Tag.
@@ -153,25 +153,19 @@ Hier ist mein Shop: ...</pre>
         </div>
       </div>
 
-      <footer class="landing-footer">
-        <a id="partner-link" href="https://recalled-partner.onrender.com/login">Bereits Partner? Hier anmelden</a>
-      </footer>
     </div>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const config = window.RECALLED_PARTNER || {};
+        const config = window.RECALLED_MITVERKAUFEN || {};
         const instagramUrl = (config.instagramUrl || "https://www.instagram.com/recalled.vintage/").trim();
         const instagramHandle = (config.instagramHandle || "recalled.vintage").trim();
-        const partnerPortalUrl = (config.partnerPortalUrl || "https://recalled-partner.onrender.com/login").trim();
 
         const instagramLink = document.getElementById("instagram-link");
         const instagramHandleEl = document.getElementById("instagram-handle");
-        const partnerLink = document.getElementById("partner-link");
 
         instagramLink.href = instagramUrl;
         instagramHandleEl.textContent = "@" + instagramHandle.replace(/^@/, "");
-        partnerLink.href = partnerPortalUrl;
 
         const applyBtn = document.getElementById("apply-btn");
         const panel = document.getElementById("application-panel");

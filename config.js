@@ -1,5 +1,4 @@
-window.RECALLED_PARTNER = {
+window.RECALLED_MITVERKAUFEN = {
   instagramHandle: "recalled.vintage",
   instagramUrl: "https://www.instagram.com/recalled.vintage/",
-  partnerPortalUrl: "https://recalled-partner.onrender.com/login",
 };
